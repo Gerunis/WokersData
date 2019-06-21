@@ -15,5 +15,7 @@ namespace WokersData
         }
 
         public DbSet<Worker> Workers { get; set; }
+        public DbSet<Language> Languages { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 }
