@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<WorkersData.Web.Models.Language>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Языки программирования";
 }
 
-<h2>Index</h2>
+<h2>Языки программирования</h2>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Добавить</a>
 </p>
 
 <table class="table">
@@ -26,8 +26,8 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Детали</a>
                 </td>
             </tr>
         }
